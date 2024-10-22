@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyan Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- début  topbar -->
+    <section id="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 coordonnees pt-3 col-6">
+            <ul class="d-flex justify-content-around">
+              <li><i class="bi bi-telephone-fill"></i> 01 23 45 67 89</li>
+              <li><i class="bi bi-envelope-fill"></i> contact@voyage.com</li>
+              <li>
+                <i class="bi bi-geo-alt-fill"></i> 30 rue de la république
+                <br class="d-none display-mobile" /><span class="ville"
+                  >75000 Paris</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-flex pt-3 col-6">
+            <!-- reseaux sociaux-->
+            <div class="social">
+              <ul class="d-flex">
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-linkedin"></i></li>
+              </ul>
+            </div>
+            <!-- bouton recherche-->
+            <div class="search-icon">
+              <button><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fin topbar -->
+    <!-- header -->
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg col-md-10 offset-md-1">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h3>Cyan Travel</h3></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Accueil</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destination.html">Destinations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">Blog</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Je Réserve !</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- slider -->
+      <div class="d-none display-mobile image-slider">
+        <h1>Voyages sur mesure</h1>
+      </div>
+      <section id="slider" class="hidden">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/Image-slider-banner3.jpg"
+                class="d-block w-100"
+                alt="voyageItalie"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1 text-white">Dolce Vita Italienne</h5>
+                <p>
+                  Partez à la découverte des trésors historiques et des paysages
+                  pittoresques, du Colisée aux côtes de la Toscane.
+                </p>
+                <a href="#" class="btn btn-primary mt-5">Détails du voyage</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/Image-slider-banner1.jpg"
+                class="d-block w-100"
+                alt="mots cles"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1 text-white">Evadez-vous !</h5>
+                <p>
+                  Savourez des moments de détente sur les plus belles côtes des
+                  États-Unis.
+                </p>
+                <a href="#" class="btn btn-primary mt-5">Détails du voyage</a>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="images/Image-slider-banner4.jpg"
+                class="d-block w-100"
+                alt="voyageItalie"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1 text-white">Dolce Vita Italienne</h5>
+                <p>
+                  Partez à la découverte des trésors historiques et des paysages
+                  pittoresques, du Colisée aux côtes de la Toscane.
+                </p>
+                <a href="#" class="btn btn-primary mt-5">Détails du voyage</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- top destinations-->
+    <section id="populaires">
+        <div class="container">
+          <!-- Formulaire recherche : destination, nombre de personnes, date debut, date fin + bouton valider-->
+
+          <form action="" method="GET">
+            <div class="row">
+              <div class="col-md-2 offset-md-1">
+                <label for="destination" class="form-label"
+                  >Rechercher Destination*</label
+                >
+                <input
+                  type="search"
+                  class="form-control"
+                  id="destination"
+                  name="destination"
+                  placeholder="Mots clés"
+                  required
+                />
+              </div>
+              <div class="col-md-2">
+                <label for="nombre-personne" class="form-label"
+                  >Nombre de personne(s)*</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="nombre-personne"
+                  name="nombre-personne"
+                  placeholder="Indiquer un nombre"
+                  required
+                />
+              </div>
+
+              <div class="col-md-2">
+                <label for="date-arrivee" class="form-label"
+                  >Date d'arrivée*</label
+                >
+                <input
+                  type="date"
+                  id="date-arrivee"
+                  name="date-arrivee"
+                  placeholder="JJ/MM/AA"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-md-2">
+                <label for="date-depart" class="form-label"
+                  >Date de départ*</label
+                >
+                <input
+                  type="date"
+                  id="date-depart"
+                  name="date-depart"
+                  placeholder="JJ/MM/AA"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="col-md-2 d-flex align-items-center">
+                <input
+                  type="submit"
+                  class="btn btn-primary form-control"
+                  value="Rechercher"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+    </section>
+
+          <!--HEADER BLOG-->
+
+          <section id="headerBlog" class="container">
+            <div class="backgroundImageBlog">
+              <div class="blogBackgroundOpacityColor">
+                <article class="text-center">
+                  <h2>Bienvenue sur notre Blog de Voyage</h2>
+                  <p>
+                    Découvrez nos aventures et conseils pour vos prochaines
+                    escapades.
+                  </p>
+                  <a href="destination.html" class="btn btn-primary btn-lg"
+                    >Commencez votre voyage</a
+                  >
+                </article>
+              </div>
+            </div>
+            <!--BULLE HEADER-->
+            <div class="card-item p-4" id="introduction">
+              <h4>Une courte introduction</h4>
+              <p>
+                Explorez le monde à travers nos récits, conseils et découvertes.
+                Que vous rêviez d'évasion, de nouvelles cultures ou d'aventures
+                insolites, vous trouverez ici de l'inspiration pour votre
+                prochaine escapade.
+              </p>
+            </div>
+          </section>
+
+          <!--REPORTAGE-->
+
+      <section id="reportage" class="container my-5 p-5">
+        <div class="title-container">
+            <h4 class="lined-title">Nos derniers reportages</h4>
+        </div> 
+
+        <div class="articleTitle">
+            <h2>À la découverte de la Norvège : Entre fjords majestueux et aurores boréales</h2>     
+        </div>
+        <article class="reportage container-md text-center">
+          <div
+            id="carouselReportage"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselReportage"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselReportage"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselReportage"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner inner-reportage">
+              <div class="carousel-item active">
+                <img
+                  src="images/michael-fousert-lE5-z4nTCTQ-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="Canada"
+                />
+                <div
+                  class="carousel-caption caption-carousel-reportage d-none d-md-block"
+                >
+                  <h5>VerFive</h5>
+                  <p>Test d'entré chez Konexio (30/03/22).</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/vidar-nordli-mathisen-641pLhGEEyg-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="Norway"
+                />
+                <div
+                  class="carousel-caption caption-carousel-reportage d-none d-md-block"
+                >
+                  <h5>CV</h5>
+                  <p>Premier projet HTML/CSS (06/06/22).</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/Canada-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="Italy"
+                />
+                <div
+                  class="carousel-caption caption-carousel-reportage d-none d-md-block"
+                >
+                  <h5>Deezer V1</h5>
+                  <p>Deuxième projet HTML/CSS (13/06/2022).</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev control-carousel-reportage"
+              type="button"
+              data-bs-target="#carouselReportage"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon icon-reportage"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next control-carousel-reportage"
+              type="button"
+              data-bs-target="#carouselReportage"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <section class="container my-5"></section>       
+            <p>
+              La Norvège est une terre où la nature semble avoir été sculptée par
+              des géants. À chaque tournant, de nouveaux paysages à couper le
+              souffle émergent : les fjords immenses plongent dans des eaux
+              cristallines, tandis que les montagnes enneigées se dressent fièrement
+              à l'horizon. Lors de notre voyage, nous avons eu la chance d’assister
+              à un spectacle des plus magiques : les aurores boréales dansant dans
+              le ciel polaire, un moment hors du temps. Ce pays, à la fois sauvage
+              et accueillant, est une invitation à l’évasion et à la contemplation.
+            </p>
+            <button class="btn btn-primary">Lire la suite...</button>
+          </section>
+      </section>
+
+      <!--Vacances de rêves-->
+
+      <section id="vacancesReves" class="container p-5">
+          <h4 class="lined-title">VOYAGE DU MOMENT</h4>
+          <article class="dream">
+          <aside class="dreamLeft">
+            <div class="card-item p-4" id="dreamTitle">
+              <h2>JAPON</h2>
+              <h3>Découvrez une destination parfaite pour l'automne !</h3>
+            </div>
+            <p class="card-item p-4" id="description">
+              Le Japon est une destination fascinante où traditions et modernité
+              cohabitent harmonieusement. De ses temples millénaires à la
+              vibrante Tokyo, en passant par les magnifiques paysages naturels
+              tels que le Mont Fuji, chaque visiteur trouvera quelque chose
+              d'unique à découvrir. C’est également un paradis pour les amoureux
+              de la cuisine avec des mets raffinés comme les sushis ou les
+              ramens. Le Japon, c'est l'équilibre parfait entre histoire, nature
+              et innovation.
+            </p>
+          </aside>
+
+          <div class="dreamRight">
+            <div class="dreamCards">
+              <div class="dreamCard">
+                <h5>Température</h5>
+                <img
+                  src="images/wired-outline-1-cloud-hover-pinch.svg"
+                  alt="Icône Météo"
+                />
+                <p>14°C</p>
+              </div>
+              <div class="dreamCard">
+                <h5>Classement</h5>
+                <img
+                  src="images/wired-outline-237-star-rating-hover-pinch.svg"
+                  alt="Icône étoile"
+                />
+                <p>2#</p>
+              </div>
+              <div class="dreamCard">
+                <h5>Thème</h5>
+                <img
+                  src="images/wired-outline-1957-maneki-cat-hover-pinch.svg"
+                  alt="Icône Culture"
+                />
+                <p>Culture</p>
+              </div>
+              <div class="dreamCard">
+                <h5>Budget</h5>
+                <img
+                  src="images/wired-outline-298-coins-hover-jump.svg"
+                  alt="Icône Budget"
+                />
+                <p>Elevé</p>
+              </div>
+            </div>
+            <div class="image-container">
+              <img
+                src="images/Japon-unsplash.jpg"
+                alt="Japon"
+                class="destination-image w-100"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="Blog" class="container my-5 py-5">
+        <div class="blogVoyages"></div>
+        <h4 class="lined-title">tous les articles</h4>
+
+        <div class="card-container-blog">
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-item">
+                <div class="card">
+                    <img src="images/img6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <!-- P avec un texte qui ne déborde pas -->
+                        <p class="card-texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione velit deserunt repudiandae accusamus est corporis.</p>
+                    </div>
+                    <div class="card-body d-flex justify-content-between links">
+                        <a href="#"><i class="bi bi-arrow-right-short"></i> Lire la suite</a>
+                        <a href="#"><i class="bi bi-chat-dots"></i> Commentaires</a>
+                    </div>
+                </div>
+            </article>
+            
+           
+        </div>
+        
+      </section>
+
+      <section>
+        <div class="Trust container text-center py-5">
+            <h3> Nous vous avons convaincu ?</h3>
+            <h2>Créez un voyage avec l'un de nos experts sur la destination
+                de votre choix</h2>
+                <a href="destination.html"><button class="btn btn-primary">Destinations</button></a>
+
+        </div>    
+      </section>
+
+    </main>
+
+    <section id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 offset-md-1">
+            <h4>A propos</h4>
+            <p>
+                Chez Cyan Travel, nous croyons que chaque voyage est une aventure unique à vivre et à partager. Spécialisés dans les séjours sur mesure, notre équipe d’experts passionnés s'engage à vous offrir des expériences authentiques adaptées à vos envies et besoins.
+            </p>
+            <img src="images/logo6.png" alt="" />
+            <img src="images/logo2.png" alt="" />
+          </div>
+          <div class="col-md-3">
+            <h4>Informations de contact</h4>
+            <p>
+                Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Notre équipe est à votre écoute et prête à vous aider !
+            </p>
+            <ul>
+              <li><i class="bi bi-telephone-fill"></i>123 456 789</li>
+              <li><i class="bi bi-envelope-fill"></i>test@est.fr</li>
+              <li><i class="bi bi-geo-alt-fill"></i>adresse complete</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Derniers articles</h4>
+            <article>
+              <a href="#">
+                <h6>Titre de l'article</h6>
+              </a>
+              <span>Date | aucun commentaire</span>
+            </article>
+            <hr />
+            <article>
+              <a href="#">
+                <h6>Titre de l'article</h6>
+              </a>
+              <span>Date | aucun commentaire</span>
+            </article>
+          </div>
+          <div class="col-md-2">
+            <h4>Abonnez vous</h4>
+            <p>N'hésitez pas à vous abonner à notre Newsletter pour resté informer de toutes nos nouveautés et offres promotionnelles.</p>
+            <form action="" method="POST">
+              <input
+                type="email"
+                placeholder="Votre email"
+                class="form-control mb-3"
+                required
+              />
+              <input
+                type="submit"
+                value="Rejoignez nous !"
+                class="btn btn-primary form-control"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="up">
+      <a href="#topbar"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col offset-md-1">
+            <ul class="d-flex justify-content-center">
+              <li><a href="#top">Mentions légales |</a></li>
+              <li><a href="#galerie">Termes & conditions |</a></li>
+              <li><a href="#action">FAQ |</a></li>
+            </ul>
+          </div>
+          <div class="col text-center">
+            <img src="images/favicon.png" alt="" width="60" />
+          </div>
+          <div class="col">
+            <p>Copyright Voyage 2023. Tous droits réservés</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

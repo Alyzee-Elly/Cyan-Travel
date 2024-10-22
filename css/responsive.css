@@ -1,0 +1,234 @@
+@media all and (max-width: 1300px) {
+  #aLaUne .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  #aLaUne .card-item {
+    width: 30%;
+  }
+
+  #aLaUne button {
+    display: none;
+  }
+
+  .continentsCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dream {
+    flex-direction: column;
+  }
+  .dreamLeft,
+  .dreamRight {
+    width: 100%;
+  }
+
+  .dreamCard img {
+    height: 50px;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .hidden {
+    display: none !important;
+  }
+  .display-mobile {
+    display: block !important;
+  }
+
+  #populaires form {
+    margin-top: 0;
+  }
+  .bleu img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .bleu {
+    padding: 01em 0;
+  }
+  .bleu .presentation {
+    margin-left: 1%;
+  }
+  #chiffres .telephone {
+    width: 80%;
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  #top .col {
+    flex: auto;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #topbar {
+    background-color: #0791be;
+    color: #fff;
+  }
+  #topbar .coordonnees ul {
+    display: block !important;
+    padding: 0;
+  }
+
+  #topbar span.ville {
+    padding-left: 1.8em;
+  }
+  .top-p {
+    width: 94%;
+  }
+
+  .image-slider {
+    background: url(../images/img15.jpg) no-repeat 0 0 scroll #0791be;
+    background-size: cover;
+
+    max-height: 225px;
+    overflow: hidden;
+  }
+
+  .image-slider h1 {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .city {
+    bottom: 20%;
+    left: 10%;
+  }
+  #top .top-cards {
+    flex-wrap: wrap;
+  }
+  #top .card {
+    width: auto;
+  }
+  #aLaUne .card-item {
+    width: 40%;
+  }
+
+  #whyUs .elements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #whyUs .elements div {
+    width: 90%;
+  }
+
+  #headerBlog {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  #headerBlog .card-item {
+    box-shadow: none;
+    position: static;
+    transform: none;
+    width: 100%;
+    border-radius: 0%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hidden {
+    display: none !important;
+  }
+  .display-mobile {
+    display: block !important;
+  }
+
+  #populaires form {
+    margin-top: 0;
+  }
+  .bleu img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .bleu {
+    padding: 01em 0;
+  }
+  .bleu .presentation {
+    margin-left: 1%;
+  }
+  #chiffres .telephone {
+    width: 80%;
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  #top .col {
+    flex: auto;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #topbar {
+    background-color: #0791be;
+    color: #fff;
+  }
+  #topbar .coordonnees ul {
+    display: block !important;
+    padding: 0;
+  }
+
+  #topbar span.ville {
+    padding-left: 1.8em;
+  }
+  .top-p {
+    width: 94%;
+  }
+
+  .image-slider {
+    background: url(../images/img15.jpg) no-repeat 0 0 scroll #0791be;
+    background-size: cover;
+
+    max-height: 225px;
+    overflow: hidden;
+  }
+
+  .image-slider h1 {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em;
+  }
+
+  #aLaUne .card-item {
+    width: 90%;
+  }
+  .dreamCard {
+    width: auto;
+  }
+  .dreamCards {
+    flex-wrap: wrap;
+  }
+
+  #Blog .card-item {
+    width: 100%;
+  }
+}
+
+@media all and (orientation: landscape) and (max-width: 812px) {
+  #activites h5 {
+    font-size: 1em;
+    padding-top: 1em;
+  }
+}
